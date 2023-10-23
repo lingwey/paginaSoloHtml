@@ -6,20 +6,141 @@
     <title>presentacion solo html</title>
     <link rel="shortcut icon" href="icons8-gato-16.png">
 </head>
+
+<style>
+    body {
+        font-family: "Lucida Console", "Courier New", monospace;
+        background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #92a4ff;
+    }
+
+    h1 {
+        background-color: black;
+        padding: 10px;
+        margin: 0;
+        color: #92a4ff;
+    }
+
+    .footer {
+        background-color: #333;
+        color: #FFF;
+        padding: 10px;
+        text-align: center;
+        clear: both;
+    }
+
+    table {
+        border-collapse: collapse;
+        border: 2px solid rgb(200, 200, 200);
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        background-color: #FFF;
+    }
+
+    td {
+        border: 1px solid rgb(190, 190, 190);
+        padding: 10px 20px;
+    }
+
+    th {
+        border: 1px solid rgb(190, 190, 190);
+        padding: 10px 20px;
+        background-color: rgb(162, 162, 162);
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
 <body>
     <header>
         <h1>MAURICIO EL GATO</h1>   
         <nav>
             <ul>
                 <li><a href="index.html">home</a></li>
-                <li><a href="preferencias.html">preferencias</a></li>
+                <li><a class="active" href="preferencias.html">preferencias</a></li>
                 <li> <a href="audiovisuales.html">audiovisuales</a></li>
                 <li> <a href="contacto.html">contacto</a></li>
              </ul>
             </nav>
     </header>
-
-    <footer>
+    <h2 style="margin: 20px;">Preferencias de Mauricio</h2>
+    <hr>
+    <div class="container">
+        <table>
+            <colgroup>
+                <col style="background-color: rgb(129, 125, 125);">
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <th></th>
+            <th>Prefire</th>
+            <th>No le gusta</th>
+            <tr>
+                <td>Comida</td>
+                <td>pollo</td>
+                <td>whiscat</td>
+            </tr>
+            <tr>
+                <td>juguetes</td>
+                <td>una pluma</td>
+                <td>una pelota</td>
+            </tr>
+            <tr>
+                <td>jugar con</td>
+                <td>los perros</td>
+                <td>los gatos</td>
+            </tr>
+            <tr>
+                <td>Baño</td>
+                <td>piedritas</td>
+                <td>pasto/arena</td>
+            </tr>
+            <tr>
+                <td>Musica</td>
+                <td>Hevy metal</td>
+                <td>Regueton</td>
+            </tr>
+        </table>
+    </div>
+    <footer class="footer">
         <p>Derechos reservados &copy;2023</p>
     </footer>
 </body>

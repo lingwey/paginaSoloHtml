@@ -5,13 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>presentacion solo html</title>
     <link rel="shortcut icon" href="icons8-gato-16.png">
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 20 0 0 ;
+            padding: 0;
+            
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 25%;
+            height: 25%;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: 25%;
+        }
+
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>MAURICIO EL GATO</h1>   
         <nav>
             <ul>
-                <li><a href="index.html">home</a></li>
+                <li><a class="active" href="index.html">home</a></li>
                 <li><a href="preferencias.html">preferencias</a></li>
                 <li> <a href="audiovisuales.html">audiovisuales</a></li>
                 <li> <a href="contacto.html">contacto</a></li>
@@ -22,12 +119,26 @@
         El michi envolvente
     </h2>
     <hr>
-    <article>
+    <article class="container">
         <h2>La llegada del michi</h2>
-        <img src="assets/img/20220725_020246.jpg" alt="gato durmiendo">
-        <p>Había una vez un gato llamado Mauricio, cuya historia comenzó en la bulliciosa ciudad de Buenos Aires. Mauricio tenía la suerte de haber sido encontrado por el hermano de su dueño, quien lo rescató de las calles de la ciudad. Su hermano, Manuel, lo trajo a casa, y desde ese día, Mauricio se convirtió en un miembro especial de la familia.</p>
+        <img src="assets/img/20220725_020246.jpg" alt="gato durmiendo" class="image">
+        <p>
+            Había una vez un gato llamado Mauricio, cuya historia comenzó en la bulliciosa ciudad de Buenos Aires. Mauricio tenía la suerte de haber sido encontrado por el hermano de su dueño, quien lo rescató de las calles de la ciudad. Su hermano, lo trajo a casa, y desde ese día, Mauricio se convirtió en un miembro especial de la familia.
+        </p>
+        <hr>
+        <p>
+            Mauricio tenía un don único. Era extraordinariamente envolvente y tenía la capacidad de convencer a todos en la casa de que le dieran lo que quería. Siempre que tenía hambre, simplemente se acercaba a Manuel con sus ojos grandes y brillantes, y nadie podía resistirse a darle un poco de su comida. Si quería cariño, se acurrucaba en el regazo de su hermana Laura y ronroneaba suavemente, envolviéndola con su encanto felino.
+        </p>
+        <img src="assets/img/20210118_013316.jpg" alt="mauricio y tomi" class="image2">
+        <img src="assets/img/20221009_023539.jpg" alt="mauricio y sylvana" class="image2">
+        <p>
+            Lo que hacía que la historia de Mauricio fuera aún más especial es que tenía dos hermanos perros, Tomi y Sylvana. A pesar de ser de especies diferentes, los tres se llevaban de maravilla. Mauricio había conquistado sus corazones a base de cariño y ternura, y los tres eran inseparables. Juntos, hacían travesuras, exploraban el jardín y compartían momentos de diversión y alegría.
+        </p>
+        <hr>
+        <img src="assets/img/20210418_013948.jpg" alt="mauricio" class="image">
+        <p>Mauricio, con su capacidad envolvente, se convirtió en el pegamento que mantenía unida a esta peculiar y amorosa familia. Su historia era un recordatorio de que el amor y la amistad pueden superar las diferencias y que un gato especial como Mauricio podía cambiar la vida de todos los que tenía la suerte de conocerlo.</p>
     </article>
-    <footer>
+    <footer class="footer">
         <p>Derechos reservados &copy;2023</p>
     </footer>
 </body>
